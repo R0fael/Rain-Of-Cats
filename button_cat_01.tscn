@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://byumhmli7n5ey"]
+
+[ext_resource type="Texture2D" uid="uid://plb16317f2q4" path="res://cat.png" id="1_3msgo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3qvk"]
+
+[node name="Button_Cat_1" type="Button"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = -152.0
+offset_right = 76.0
+offset_bottom = -1.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v3qvk")
+icon = ExtResource("1_3msgo")
+vertical_icon_alignment = 2
+expand_icon = true

@@ -1,0 +1,158 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyhijkou31c5g"]
+
+[ext_resource type="Script" uid="uid://diy4k3t3cci8h" path="res://main_script.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://byumhmli7n5ey" path="res://button_cat_01.tscn" id="2_0xm2m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="Button_Storm" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -193.0
+offset_top = -184.0
+offset_right = 193.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Storm"
+
+[node name="Control_Cats" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -184.0
+offset_bottom = -184.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button_Cat_1" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_2" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_3" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_4" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_5" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_6" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_7" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_8" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_9" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Button_Cat_10" parent="Control_Cats" instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 156.0
+offset_bottom = 151.0
+grow_horizontal = 1
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 520.0
+offset_top = 392.0
+offset_right = 520.0
+offset_bottom = 392.0
+
+[connection signal="button_down" from="Button_Storm" to="." method="_on_button_storm_button_down"]
