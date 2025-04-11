@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu0jaf1v0k3dp"]
+
+[ext_resource type="Texture2D" uid="uid://plb16317f2q4" path="res://cat.png" id="1_hvu2u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3qvk"]
+
+[node name="Control_Cat_1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_Cat_1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = -152.0
+offset_right = 56.0
+offset_bottom = -1.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v3qvk")
+text = "bzzz"
+icon = ExtResource("1_hvu2u")
+vertical_icon_alignment = 2
+expand_icon = true

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dwrdk6jdujbgm"]
+
+[node name="Control_TriangDrop_1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+collision_layer = 0
+gravity_scale = 0.0
+can_sleep = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+polygon = PackedVector2Array(-32, 40, 32, 40, 0, -16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(0, 96)
+polygon = PackedVector2Array(-64, 0, 64, 0, 64, 80, -64, 80)

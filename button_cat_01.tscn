@@ -14,6 +14,7 @@ offset_right = 76.0
 offset_bottom = -1.0
 grow_horizontal = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_v3qvk")
+text = "bzzz"
 icon = ExtResource("1_3msgo")
 vertical_icon_alignment = 2
 expand_icon = true
