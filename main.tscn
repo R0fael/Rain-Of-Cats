@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dyhijkou31c5g"]
+[gd_scene load_steps=19 format=3 uid="uid://dyhijkou31c5g"]
 
 [ext_resource type="Script" uid="uid://diy4k3t3cci8h" path="res://main_script.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://chqspxmbetsym" path="res://goat.png" id="2_1bvp3"]
@@ -6,6 +6,34 @@
 [ext_resource type="Texture2D" uid="uid://d0owh2fkvop7e" path="res://dog.png" id="3_h2yge"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3qvk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1bvp3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mycd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_272bh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5vw27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kek77"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4c57u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efxa6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg77c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycdy4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w48qg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.38, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(0, 0.197359, 0.336296, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -139,6 +167,52 @@ icon = ExtResource("2_h2yge")
 vertical_icon_alignment = 2
 expand_icon = true
 
+[node name="Control_Cat_6" type="Control" parent="Control_Cats"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_Cat_6" type="Button" parent="Control_Cats/Control_Cat_6"]
+modulate = Color(5, 5, 5, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = -152.0
+offset_right = 56.0
+offset_bottom = -1.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v3qvk")
+text = "bzzz"
+icon = ExtResource("2_h2yge")
+vertical_icon_alignment = 2
+expand_icon = true
+
+[node name="Control_Cat_7" type="Control" parent="Control_Cats"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_Cat_7" type="Button" parent="Control_Cats/Control_Cat_7"]
+modulate = Color(5, 5, 5, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = -152.0
+offset_right = 56.0
+offset_bottom = -1.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v3qvk")
+text = "bzzz"
+icon = ExtResource("2_h2yge")
+vertical_icon_alignment = 2
+expand_icon = true
+
 [node name="Control_Cat_5" type="Control" parent="Control_Cats"]
 layout_mode = 3
 anchors_preset = 0
@@ -161,6 +235,306 @@ icon = ExtResource("3_h2yge")
 vertical_icon_alignment = 2
 expand_icon = true
 
+[node name="Contol_Words" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Button_Tutorial" type="Button" parent="Contol_Words"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -506.0
+offset_top = 52.0
+offset_right = 506.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "Swing your cursor around to go through this storm...
+
+"
+
+[node name="Button_Tutorial2" type="Button" parent="Contol_Words"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -506.0
+offset_top = 52.0
+offset_right = 506.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "Swing your cursor around to go through this storm...
+
+"
+
+[node name="Button_Msg_Win" type="Button" parent="Contol_Words"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = 52.0
+offset_right = 492.0
+offset_bottom = 367.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 115
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "You WIN!"
+
+[node name="Button_Msg_TryAgain" type="Button" parent="Contol_Words/Button_Msg_Win"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -506.0
+offset_top = -315.0
+offset_right = 506.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "Gotta Load it again
+to try again!"
+
+[node name="Button_Msg_Lost" type="Button" parent="Contol_Words"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = 52.0
+offset_right = 492.0
+offset_bottom = 367.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 115
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "You Lost..."
+
+[node name="Button_Msg_TryAgain" type="Button" parent="Contol_Words/Button_Msg_Lost"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -506.0
+offset_top = -315.0
+offset_right = 506.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "Gotta Load it again
+to try again!"
+
+[node name="Button_Msg_Draw" type="Button" parent="Contol_Words"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = 52.0
+offset_right = 492.0
+offset_bottom = 367.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 115
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "DRAW!!!"
+
+[node name="Button_Msg_TryAgain" type="Button" parent="Contol_Words/Button_Msg_Draw"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -506.0
+offset_top = -315.0
+offset_right = 506.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.140447, 0.140447, 0.140447, 1)
+theme_override_constants/outline_size = 45
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5vw27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4c57u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w48qg")
+text = "Gotta Load it again
+to try again!"
+
+[node name="Control_Points" type="Control" parent="."]
+anchors_preset = 0
+offset_top = -56.0
+offset_right = 40.0
+offset_bottom = -16.0
+mouse_filter = 2
+
+[node name="TabBar_DROP" type="TabBar" parent="Control_Points"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 56.0
+offset_right = 1152.0
+offset_bottom = 112.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 18
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_1bvp3")
+current_tab = 0
+clip_tabs = false
+scrolling_enabled = false
+scroll_to_selected = false
+tab_count = 1
+tab_0/title = "   DROP  "
+
+[node name="TabBar_FLOAT" type="TabBar" parent="Control_Points"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 112.0
+offset_right = 1152.0
+offset_bottom = 168.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 18
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_lquwl")
+current_tab = 0
+clip_tabs = false
+scrolling_enabled = false
+scroll_to_selected = false
+tab_count = 1
+tab_0/title = "  FLOAT  "
+
 [node name="Button_Storm" type="Button" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
@@ -169,26 +543,21 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -193.0
-offset_top = -648.0
-offset_right = 193.0
-offset_bottom = -464.0
+offset_left = -192.0
+offset_top = -520.0
+offset_right = 194.0
+offset_bottom = -400.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 36
 text = "CONFRONT STORM"
-
-[node name="Control" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 520.0
-offset_top = 392.0
-offset_right = 520.0
-offset_bottom = 392.0
 
 [connection signal="button_down" from="Control_Cats/Control_Cat_0/Button_Cat_0" to="." method="_on_cat_0_button_down"]
 [connection signal="button_down" from="Control_Cats/Control_Cat_1/Button_Cat_1" to="." method="_on_cat_1_button_down"]
 [connection signal="button_down" from="Control_Cats/Control_Cat_2/Button_Cat_2" to="." method="_on_cat_2_button_down"]
 [connection signal="button_down" from="Control_Cats/Control_Cat_3/Button_Cat_3" to="." method="_on_cat_3_button_down"]
 [connection signal="button_down" from="Control_Cats/Control_Cat_4/Button_Cat_4" to="." method="_on_cat_4_button_down"]
+[connection signal="button_down" from="Control_Cats/Control_Cat_6/Button_Cat_6" to="." method="_on_cat_6_button_down"]
+[connection signal="button_down" from="Control_Cats/Control_Cat_7/Button_Cat_7" to="." method="_on_cat_7_button_down"]
 [connection signal="button_down" from="Control_Cats/Control_Cat_5/Button_Cat_5" to="." method="_on_cat_5_button_down"]
 [connection signal="button_down" from="Button_Storm" to="." method="_on_button_storm_button_down"]
