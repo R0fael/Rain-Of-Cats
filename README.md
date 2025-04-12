@@ -7,7 +7,11 @@
 <br><a target="_blank" href="https://youtube.com/live/g-xcY-w0Mlg" style="font-family: inherit;">https://youtube.com/live/g-xcY-w0Mlg</a></p>
 <p class="text-center">The challenge was to not use the letter E in any of the game's .gd script files, except for "extends" at the top of the script.</p>
 <p class="text-center">Nodes added&nbsp;to the scene tree also had to not have the letter "E" in them and they couldn't have their original names changed, only appended to.</p>
-<p class="text-center">Finally, the letter "E" is not present in any on screen text either!</p>
+<p class="text-center">The letter "E" is not present in any on screen text either!</p>
+
+<p class="text-center">Finally, for every hour I didn't finish the game, the chat would vote on a new theme I had to incorporate... I got them all (relative to their context) except for the last one, "Background"!</p>
+<p class="text-center"><strong>Extra themes: Storms, Cats, Gravity, Bees, Bubbles, Big ol Dog, Goats, Merge n Pull, More Cats, Just Finish It, and Background.</strong></p>
+
 <h3 class="text-center">It was so difficult...</h3>
 <h3 class="text-center">But I learned a ton and had lots of help from the Hyper Game Dev community.</h3>
 <p></p>
