@@ -5,7 +5,7 @@ var cat_max: int = 5
 
 var cats_falling: bool = 0
 
-var cats_floating_array: Array[int] = []
+var cats_floating_array: Array[int] = [-5]
 
 var cat_fall_amounts: Array[float] = [
 	0.,
@@ -44,20 +44,30 @@ func adjust_cats_fall_pos():
 				
 			
 func watch_cats_pos():
-	if cat_fall_amounts[-1] >= 3900:
+	print(cats_floating_array.find(cats_floating_array.back()))
+	if cats_floating_array.find(cats_floating_array.back()) == 6:
+		if cat_fall_amounts[-1] >= 1900:
+			print("it's working")
+			undo_float_n_fall()
+		
+	if not cats_floating_array == []:
+		if not cats_floating_array.find(cats_floating_array.back()) == 6:
+			if cat_fall_amounts[-1] >= 3900:
+				undo_float_n_fall()
+		
+func undo_float_n_fall() -> void:
 		cats_falling = 0
 		show_button()
-		
 		cat_fall_amounts.fill(0.)
 		cat_num = -1
-		cats_floating_array = []
+		cats_floating_array = [-5]
+		
 		
 func show_button() -> void:
 	%Button_Storm.position.y = storm_button_pos_initial
 	
 
 func _on_button_storm_button_down() -> void:
-	print("it is")
 	%Button_Storm.position.y = storm_button_pos_away
 	
 	fall_amount += difficulty_scalar
@@ -85,19 +95,25 @@ func show_a_cat() -> void:
 
 
 func _on_cat_0_button_down() -> void:
-	cats_floating_array.push_back(0)
+	if not cats_floating_array.has(0):
+		cats_floating_array.push_back(0)
 
 func _on_cat_1_button_down() -> void:
-	cats_floating_array.push_back(1)
+	if not cats_floating_array.has(1):
+		cats_floating_array.push_back(1)
 
 func _on_cat_2_button_down() -> void:
-	cats_floating_array.push_back(2)
+	if not cats_floating_array.has(2):
+		cats_floating_array.push_back(2)
 
 func _on_cat_3_button_down() -> void:
-	cats_floating_array.push_back(3)
+	if not cats_floating_array.has(3):
+		cats_floating_array.push_back(3)
 
 func _on_cat_4_button_down() -> void:
-	cats_floating_array.push_back(4)
+	if not cats_floating_array.has(4):
+		cats_floating_array.push_back(4)
 
 func _on_cat_5_button_down() -> void:
-	cats_floating_array.push_back(5)
+	if not cats_floating_array.has(5):
+		cats_floating_array.push_back(5)
