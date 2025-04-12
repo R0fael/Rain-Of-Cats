@@ -44,10 +44,10 @@ func adjust_cats_fall_pos():
 				
 			
 func watch_cats_pos():
-	print(cats_floating_array.find(cats_floating_array.back()))
+	#print(cats_floating_array.find(cats_floating_array.back()))
 	if cats_floating_array.find(cats_floating_array.back()) == 6:
 		if cat_fall_amounts[-1] >= 1900:
-			print("it's working")
+			#print("it's working")
 			undo_float_n_fall()
 		
 	if not cats_floating_array == []:
@@ -58,6 +58,7 @@ func watch_cats_pos():
 func undo_float_n_fall() -> void:
 		cats_falling = 0
 		show_button()
+		undo_cats()
 		cat_fall_amounts.fill(0.)
 		cat_num = -1
 		cats_floating_array = [-5]
@@ -66,6 +67,9 @@ func undo_float_n_fall() -> void:
 func show_button() -> void:
 	%Button_Storm.position.y = storm_button_pos_initial
 	
+func undo_cats() -> void:
+	for i: int in 6:
+		print("i")
 
 func _on_button_storm_button_down() -> void:
 	%Button_Storm.position.y = storm_button_pos_away
